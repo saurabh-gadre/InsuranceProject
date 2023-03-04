@@ -1,8 +1,12 @@
 {
-    "compilerOptions": {
-      "target": "es5",
-      "lib": ["es5", "dom"],
-      "types": ["cypress", "node"]
-    },
-    "include": ["**/*.ts", "cypress/support/commands.js", "cypress/support/e2e.js"]
+  "compilerOptions": {
+    "types": ["cypress", "node"],
+    "esModuleInterop": true
+  },
+  "include": [
+    "**/*.ts",
+    "cypress/support/commands.js",
+    "cypress/support/e2e.js",
+    "cypress/support/step_definitions/*.ts"
+  ]
 }
